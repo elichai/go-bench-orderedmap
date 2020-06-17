@@ -1,0 +1,14 @@
+**BenchmarkMapInsert**:        HeapAlloc: 17,267,000,248, TotalAlloc: 20,782,813,112, Mallocs: 142,455,440, Frees: 614,129    StackSys: 327,680, StackInuse: 327,680, Sys: 18,295,535,664
+**BenchmarkElliotMapInsert**:  HeapAlloc: 21,499,900,360, TotalAlloc: 23,606,535,904, Mallocs: 352,455,792, Frees: 1,214,922  StackSys: 327,680, StackInuse: 327,680, Sys: 22,784,569,576
+**BenchmarkW8MapInsert**:      HeapAlloc: 22,617,258,104, TotalAlloc: 24,726,598,920, Mallocs: 352,456,094, Frees: 1,227,919  StackSys: 327,680, StackInuse: 327,680, Sys: 23,961,500,016
+**BenchmarkElichaiMapInsert**: HeapAlloc: 18,010,579,768, TotalAlloc: 24,143,425,208, Mallocs: 212,457,035, Frees: 55,139,527 StackSys: 327,680, StackInuse: 327,680, Sys: 19,635,982,536
+
+
+**BenchmarkMapRemove**:        HeapAlloc: 17,266,997,720, TotalAlloc: 20,782,835,800, Mallocs: 142,455,498, Frees: 614,190    StackSys: 327,680, StackInuse: 327,680, Sys: 18,295,601,200
+**BenchmarkElliotMapRemove**:  HeapAlloc: 21,497,061,656, TotalAlloc: 23,606,285,576, Mallocs: 352,454,587, Frees: 1,227,357  StackSys: 327,680, StackInuse: 327,680, Sys: 22,784,569,576
+**BenchmarkW8MapRemove**:      HeapAlloc: 22,617,138,328, TotalAlloc: 24,725,994,376, Mallocs: 352,453,187, Frees: 1,225,596  StackSys: 327,680, StackInuse: 327,680, Sys: 23,987,845,488
+**BenchmarkElichaiMapRemove**: HeapAlloc: 18,009,456,760, TotalAlloc: 24,142,623,616, Mallocs: 212,454,950, Frees: 5,5140,362 StackSys: 327,680, StackInuse: 327,680, Sys: 19,635,982,536
+
+
+
+go test -count=1 -cpu=1 -parallel=1 -benchtime=1x -bench=TEST
